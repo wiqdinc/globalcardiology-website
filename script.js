@@ -39,37 +39,37 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 // Contact Form Handling
-const contactForm = document.getElementById('contactForm');
-if (contactForm) {
-    contactForm.addEventListener('submit', function(e) {
-        e.preventDefault();
+// const contactForm = document.getElementById('contactForm');
+// if (contactForm) {
+//     contactForm.addEventListener('submit', function(e) {
+//         e.preventDefault();
         
-        // Get form values
-        const firstName = document.getElementById('firstName').value;
-        const lastName = document.getElementById('lastName').value;
-        const email = document.getElementById('email').value;
-        const phone = document.getElementById('phone').value;
-        const message = document.getElementById('message').value;
+//         // Get form values
+//         const firstName = document.getElementById('firstName').value;
+//         const lastName = document.getElementById('lastName').value;
+//         const email = document.getElementById('email').value;
+//         const phone = document.getElementById('phone').value;
+//         const message = document.getElementById('message').value;
         
-        // Create mailto link
-        const subject = encodeURIComponent('Contact Form Submission from ' + firstName + ' ' + lastName);
-        const body = encodeURIComponent(
-            'Name: ' + firstName + ' ' + lastName + '\\n' +
-            'Email: ' + email + '\\n' +
-            'Phone: ' + phone + '\\n\\n' +
-            'Message:\\n' + message
-        );
+//         // Create mailto link
+//         const subject = encodeURIComponent('Contact Form Submission from ' + firstName + ' ' + lastName);
+//         const body = encodeURIComponent(
+//             'Name: ' + firstName + ' ' + lastName + '\\n' +
+//             'Email: ' + email + '\\n' +
+//             'Phone: ' + phone + '\\n\\n' +
+//             'Message:\\n' + message
+//         );
         
-        // Open default email client
-        window.location.href = 'mailto:info@globalcardiology.ca?subject=' + subject + '&body=' + body;
+//         // Open default email client
+//         window.location.href = 'mailto:info@globalcardiology.ca?subject=' + subject + '&body=' + body;
         
-        // Show success message
-        alert('Thank you for contacting us! Your default email client will open to send the message.');
+//         // Show success message
+//         alert('Thank you for contacting us! Your default email client will open to send the message.');
         
-        // Reset form
-        contactForm.reset();
-    });
-}
+//         // Reset form
+//         contactForm.reset();
+//     });
+// }
 
 // Smooth scroll for anchor links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {

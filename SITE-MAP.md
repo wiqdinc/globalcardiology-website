@@ -39,7 +39,7 @@
 │     ├─ Contact Info (Phone, Fax, Email, Address)              │
 │     ├─ Quick Links (All Pages)                                │
 │     ├─ Social Media (Facebook, Instagram)                     │
-│     └─ Copyright © 2024                                        │
+│     └─ Copyright © 2025                                        │
 │                                                                  │
 └─────────────────────────────────────────────────────────────────┘
 
