@@ -482,7 +482,7 @@ img {
     color: var(--medium-gray);
 }
 
-.office-list p + p {
+.clinic-list p + p {
     margin-top: 0.85rem;
 }
 
@@ -624,11 +624,11 @@ img {
     margin-bottom: 0.75rem;
 }
 
-.footer .office-list p {
+.footer .clinic-list p {
     margin-bottom: 1rem;
 }
 
-.footer .office-list p:last-child {
+.footer .clinic-list p:last-child {
     margin-bottom: 0;
 }
 
