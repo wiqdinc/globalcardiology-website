@@ -38,7 +38,18 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 });
 
-// Contact Form Handling
+// Requisition location picker
+const requisitionDownload = document.getElementById('requisition-download');
+const requisitionLocation = document.getElementById('requisition-location');
+
+if (requisitionDownload && requisitionLocation) {
+    requisitionDownload.addEventListener('click', () => requisitionLocation.showModal());
+    requisitionLocation.querySelectorAll('a[download]').forEach(link => {
+        link.addEventListener('click', () => requisitionLocation.close());
+    });
+}
+
+// Contact Form Handling (previous email-client implementation)
 // const contactForm = document.getElementById('contactForm');
 // if (contactForm) {
 //     contactForm.addEventListener('submit', function(e) {

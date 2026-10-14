@@ -74,7 +74,7 @@
                     </div>
                     <h2>GC Requisition Form</h2>
                     <p>Standard requisition form for Global Cardiology referrals.</p>
-                    <a href="assets/GC-referral.pdf" class="btn btn-primary" download>Download</a>
+                    <button type="button" class="btn btn-primary" id="requisition-download" aria-haspopup="dialog" aria-controls="requisition-location">Download</button>
                 </div>
 
                 <div class="requisition-card">
@@ -157,6 +157,19 @@
             </div>
         </div>
     </footer>
+
+    <dialog id="requisition-location" class="requisition-dialog" aria-labelledby="requisition-location-title" aria-describedby="requisition-location-description">
+        <h2 id="requisition-location-title">Which clinic is the referral for?</h2>
+        <p id="requisition-location-description">Choose a location to download its requisition form.</p>
+        <div class="requisition-location-options">
+            <a href="assets/GC-referral-barrhaven-south-keys.pdf" class="btn" download>Barrhaven</a>
+            <a href="assets/GC-referral-barrhaven-south-keys.pdf" class="btn" download>South Keys</a>
+            <a href="assets/GC-referral.pdf" class="btn" download>Vaughan</a>
+        </div>
+        <form method="dialog">
+            <button type="submit" class="btn requisition-cancel">Cancel</button>
+        </form>
+    </dialog>
 
     <script src="script.js"></script>
 </body>
