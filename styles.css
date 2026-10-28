@@ -627,16 +627,15 @@ img {
 }
 
 /* Footer */
-.footer {
-    background: var(--dark-text);
-    color: var(--white);
-    padding: 60px 0 20px;
-}
 
+/* Footer layout */
 .footer-content {
     display: grid;
-    /* Keep all four footer sections on one balanced row on desktop. */
-    grid-template-columns: minmax(190px, 1fr) minmax(300px, 1.35fr) minmax(130px, 0.65fr) minmax(210px, 1fr);
+    grid-template-columns:
+        minmax(190px, 1fr)
+        minmax(300px, 1.35fr)
+        minmax(130px, 0.65fr)
+        minmax(210px, 1fr);
     align-items: start;
     gap: 1.5rem;
     margin-bottom: 3rem;
@@ -646,7 +645,6 @@ img {
     min-width: 0;
 }
 
-/* Keep Quick Links and Serving Communities visually grouped in the center/right. */
 .footer-section:nth-child(3),
 .footer-section:nth-child(4) {
     padding-top: 0.15rem;
@@ -661,64 +659,24 @@ img {
     overflow-wrap: anywhere;
 }
 
-.footer-section h4 {
-    color: var(--white);
-    margin-bottom: 1.5rem;
-}
-
-.footer-logo {
-    height: 100px;
-    width: auto;
-    margin-bottom: 1rem;
-}
-
-.footer-tagline {
-    color: var(--light-blue);
-    font-style: italic;
-}
-
-.footer a {
-    color: #cccccc;
-}
-
-.footer a:hover {
-    color: var(--light-blue);
-}
-
-.footer-links {
-    list-style: none;
-}
-
-.footer-links li {
-    margin-bottom: 0.75rem;
-}
-
-.footer .clinic-list p {
-    margin-bottom: 1rem;
-}
-
-.footer .clinic-list p:last-child {
-    margin-bottom: 0;
-}
-
-.footer-bottom {
-    text-align: center;
-    padding-top: 2rem;
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
-}
-
-.footer-bottom p {
-    margin: 0;
-    color: #999999;
-}
-
-/* Tablet and small laptop footer layout */
+/* Tablet layout */
 @media (min-width: 769px) and (max-width: 1100px) {
     .footer-content {
-        grid-template-columns: minmax(180px, 1fr) minmax(260px, 1.4fr);
+        grid-template-columns:
+            minmax(180px, 1fr)
+            minmax(260px, 1.4fr);
         gap: 2rem;
     }
 }
+
+/* Mobile layout */
+@media (max-width: 768px) {
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+}
+
 
 /* Responsive Design */
 @media (max-width: 768px) {
